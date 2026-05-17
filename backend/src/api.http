@@ -39,3 +39,43 @@ Content-Type: application/json
 
 ### Deletar produto
 DELETE http://localhost:3333/products/COLE_O_ID_AQUI
+
+###
+
+###
+
+### Criar usuário
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "name": "Igor",
+  "email": "igor@email.com",
+  "password": "123456",
+  "role": "admin"
+}
+
+###
+
+### Listar usuários
+GET http://localhost:3333/users
+
+###
+
+### Buscar usuário por ID
+GET http://localhost:3333/users/COLE_O_ID
+
+###
+
+### Atualizar usuário
+PUT http://localhost:3333/users/COLE_O_ID
+Content-Type: application/json
+
+{
+  "name": "Igor Atualizado"
+}
+
+###
+
+### Deletar usuário
+DELETE http://localhost:3333/users/COLE_O_ID

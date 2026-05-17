@@ -4,6 +4,7 @@ import { productRoutes } from "./routes/product.routes"
 
 import { errorHandler } from "./middlewares/error-handler"
 
+import { userRoutes } from "./routes/user.routes"
 
 const app = Fastify({
   logger: true
@@ -24,3 +25,5 @@ app.listen({
 }).then(() => {
   console.log("Server running on port 3333")
 })
+
+app.register(userRoutes)
