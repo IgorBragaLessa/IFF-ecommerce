@@ -1,0 +1,41 @@
+### Health Check
+GET http://localhost:3333
+
+###
+
+### Criar produto
+POST http://localhost:3333/products
+Content-Type: application/json
+
+{
+  "name": "Mouse Gamer",
+  "description": "RGB",
+  "price": 150,
+  "stock": 20,
+  "category": "Periféricos"
+}
+
+###
+
+### Listar produtos
+GET http://localhost:3333/products
+
+###
+
+### Buscar produto por ID
+GET http://localhost:3333/products/COLE_O_ID_AQUI
+
+###
+
+### Atualizar produto
+PUT http://localhost:3333/products/COLE_O_ID_AQUI
+Content-Type: application/json
+
+{
+  "price": 500
+}
+
+###
+
+### Deletar produto
+DELETE http://localhost:3333/products/COLE_O_ID_AQUI
