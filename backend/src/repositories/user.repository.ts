@@ -8,7 +8,7 @@ import {
 export class UserRepository {
   async create(data: CreateUserDTO) {
     return prisma.user.create({
-      dat
+      data
     })
   }
 
